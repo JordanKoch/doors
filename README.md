@@ -163,8 +163,6 @@ function toggleDoors3(count, initialState) {
     count--;
   }
 
-  doors[0] = !initialState;
-
   return doors;
 }
 ```
@@ -208,8 +206,6 @@ function toggleDoors4(count, initialState) {
 
     count--;
   }
-
-  doors[0] = !initialState;
 
   return doors;
 }

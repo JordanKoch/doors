@@ -11,7 +11,7 @@ There are 100 doors, all closed initially.
 All doors were initially closed; determin which doors are left open
 at the end of 100 passes.
 
-Initial Version
+Initial Attempt
 ---------------
 
 The initial version looked like this:

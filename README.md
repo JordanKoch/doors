@@ -8,7 +8,7 @@ There are 100 doors, all closed initially.
 
 ...and so on former 100 passes.
 
-All doors were initially closed; determin which doors are left open
+All doors were initially closed; determine which doors are left open
 at the end of 100 passes.
 
 Initial Attempt

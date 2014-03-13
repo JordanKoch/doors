@@ -143,7 +143,7 @@ The optimized version clearly performs better than the naive attempt.
 
 ### Optimization Attempt #2
 
-In examining the output more closely, I noticed another pattern. If I considered the final door states using a 1-based index, I realized that element whose 1-based index had integer square root always ended up in the toggled state; all other doors remained in their initial state.
+In examining the output more closely, I noticed another pattern. If I considered the final door states using a 1-based index, I realized that an element whose 1-based index had an integer square root always ended up in the toggled state; all other doors remained in their initial state.
 
 I wrote another version to test this:
 

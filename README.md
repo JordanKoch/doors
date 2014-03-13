@@ -264,6 +264,6 @@ Add to the fact that we are also consuming memory with the cache, this marginal 
 
 Conclusion
 ----------
-For succincly expressing the mathematical function that determines door states, `toggleDoors3` (Optimization Attempt #2) provides performance that is almost as good as the other optimization attempts. The third optimization attempt, which uses a pre-populated cache to determine element positions that have integer square roots, barely improves performance while increasing space requirements. My choice is `toggleDoor3` (Optimization Attempt #2).
+For succinctly expressing the mathematical function that determines door states, `toggleDoors3` (Optimization Attempt #2) provides performance that is almost as good as the other optimization attempts. The third optimization attempt, which uses a pre-populated cache to determine element positions that have integer square roots, barely improves performance while increasing space requirements. My choice is `toggleDoor3` (Optimization Attempt #2).
 
 

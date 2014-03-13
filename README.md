@@ -6,7 +6,7 @@ There are 100 doors, all closed initially.
  * On pass #3, you toggle the state of every third door.
  * On pass #4, you toggle the state of every fourth door.
 
-...and so on former 100 passes.
+...and so on for 100 passes.
 
 All doors were initially closed; determine which doors are left open
 at the end of 100 passes.

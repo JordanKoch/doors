@@ -13,7 +13,7 @@ at the end of 100 passes.
 
 var assert = require('assert');
 
-var count = 1000000;
+var count = 10000000;
 var initialState = false; // closed
 
 var squareroots = [];

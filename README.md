@@ -221,7 +221,27 @@ function initializeSquareRoots(count) {
 }
 ```
 
-However, even when I increased the number of doors to 10,000,000 the performance was only marginally better:
+When I ran the test for 1,000,000 doors, I got the following results
+
+```
+The optimized versions returned the same results as the baseline version
+toggleDoors1 took 286ms
+toggleDoors2 took 81ms
+toggleDoors3 took 111ms
+toggleDoors4 took 96ms
+
+optimized1 version performed in 28.3% of the time taken by the O(n^2) version
+optimized1 version is 3.5 times faster the O(n^2) version
+
+optimized2 version performed in 38.8% of the time taken by the O(n^2) version
+optimized2 version is 2.6 times faster the O(n^2) version
+
+optimized3 version performed in 33.6% of the time taken by the O(n^2) version
+optimized3 version is 3.0 times faster the O(n^2) version
+```
+
+
+When I increased the number of doors to 10,000,000 the performance was much better:
 
 ```
 The optimized versions returned the same results as the baseline version
@@ -240,8 +260,10 @@ optimized3 version performed in 15.2% of the time taken by the O(n^2) version
 optimized3 version is 6.6 times faster the O(n^2) version
 ```
 
-Add to the fact that we are also consuming memory with the cache, this marginal increase in performance is not worth it.
+Add to the fact that we are also consuming memory with the cache, this marginal increase in performance is probably not worth it.
 
 Conclusion
 ----------
-For best performance, `toggleDoors2` (the first optimization attempt) is the best choice for both time and space. However, for succincly expressing the mathematical function that determines door states, `toggleDoors3` (the second optimization attempt) provides performance that is almost as good. Unless performance was absolutely critical, a strong argument can be made for favoring this version based on readability and maintenance. The third optimization attempt, which propopulated a cache to indicate element positions that have integer square roots, barely improved performance while increasing space requirements.
+For succincly expressing the mathematical function that determines door states, `toggleDoors3` (Optimization Attempt 2) provides performance that is almost as good as the other optimization attempts'. The third optimization attempt, which uses a pre-populated cache to determine element positions that have integer square roots, barely improves performance while increasing space requirements. My choice is `toggleDoor3` (Optimization Attempt 2).
+
+
